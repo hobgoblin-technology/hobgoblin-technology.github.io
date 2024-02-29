@@ -258,15 +258,19 @@
             }
 
             /* navigation link when a link is hovered over */
-            #navbar li a:hover + .wip{
+            #navbar li a:hover {
                 color: #a49cba;
                 text-decoration: underline;
                 display: block;
             }
-            #navbar .wip{
-                display: none;
-                position: relative;
+            #navbar .unfinished {
+                padding: 0px;
+                opacity: 0%;
             }
+
+            #navbar .unfinished:hover {
+                opacity: 100%;
+            }       
             #flex {
                 display: flex;
             }
