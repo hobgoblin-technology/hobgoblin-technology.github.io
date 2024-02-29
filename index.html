@@ -15,14 +15,31 @@
     new trailingCursor({baseImageSrc: "/images/goblin-small.png"});
   </script>
   <script language='JavaScript'>
-  import { anotherNeko, catHerding } from "https://webneko.net/n20171213.js";
-  NekoType = "black";
+  
+  function anotherNeko(bActive) {
+  	
+  	x = Math.floor(Math.random() * box.boundWidth());
+  	y = Math.floor(Math.random() * box.boundHeight());
+  	scat = new Neko(x,y, bActive);
+  	
+  }
+  function catHerding()
+  {
+  	for(var i = 0; i < 10; i++)
+  	{
+  		anotherNeko(true);
+  	}
+  }
   setInterval(anotherNeko, 1000);return false;
   </script>
 
 </head>
 
 <body>
+    <script>NekoType="black"</script>
+    <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+    href="https://webneko.net">Neko</a></h1>
+    
         <div id="container">
             <div id="headerArea">
                 <div id="header" style="height: 98px;">
