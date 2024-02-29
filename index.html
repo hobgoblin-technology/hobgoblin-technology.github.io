@@ -39,7 +39,7 @@
     <script>NekoType="black"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-    
+
         <div id="container">
             <div id="headerArea">
                 <div id="header" style="height: 98px;">
@@ -55,6 +55,9 @@
                         <li><a href="/blog">Blog</a></li>
                         <li><a href="/cat">Cat</a></li>
                     </ul>
+                    <div class="wip">
+                        <img src="/images/welcome.gif" alt="an image conveying a work in progress">
+                    </div>
                 </nav>
                 <div id="counter" style="font-family:'VeniceClassic'; font-size: 24px; color: black; height: 100px;">
                 <center>
@@ -246,11 +249,13 @@
             }
 
             /* navigation link when a link is hovered over */
-            #navbar li a:hover {
+            #navbar li a:hover + .wip{
                 color: #a49cba;
                 text-decoration: underline;
             }
-
+            #navbar .wip{
+                display: none;
+            }
             #flex {
                 display: flex;
             }
