@@ -42,19 +42,19 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="/homelab">Homelab</a></li>
-                    <div class="wip">
+                    <div class="unfinished">
                         <img src="/images/welcome.gif" alt="an image conveying a work in progress">
                     </div>
                     <li><a href="/recipes">Recipes</a></li>
-                    <div class="wip">
+                    <div class="unfinished">
                         <img src="/images/welcome.gif" alt="an image conveying a work in progress">
                     </div>
                     <li><a href="/blog">Blog</a></li>
-                    <div class="wip">
+                    <div class="unfinished">
                         <img src="/images/welcome.gif" alt="an image conveying a work in progress">
                     </div>
                     <li><a href="/cat">Cat</a></li>
-                    <div class="wip">
+                    <div class="unfinished">
                         <img src="/images/welcome.gif" alt="an image conveying a work in progress">
                     </div>
                 </ul>
@@ -100,12 +100,12 @@ and then link it! Many fonts have separate files for each style
         font-family: VeniceClassic;
         src: url(https://sadhost.neocities.org/fonts/VeniceClassic.woff);
     }
-    /*
+    
     @font-face {
         font-family: VeniceClassic;
-        src: url('https://goblintech.neocities.org/fonts/VeniceClassic.ttf');
+        src: url('/fonts/VeniceClassic.ttf');
     }
-    */
+    
     @font-face {
         font-family: Nunito;
         src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
@@ -218,14 +218,19 @@ you can add them directly to the <div id="header"></div> element! */
     }
 
     /* navigation link when a link is hovered over */
-    #navbar li a:hover + .wip{
+    #navbar li a:hover {
         color: #a49cba;
         text-decoration: underline;
         display: block;
     }
-    #navbar .wip{
-        display: none;
-        position: relative;
+    #navbar .unfinished {
+        margin: 0px;
+        padding: 0px;
+        opacity: 0%;
+    }
+
+    #navbar .unfinished:hover {
+        opacity: 100%;
     }
     #flex {
         display: flex;
