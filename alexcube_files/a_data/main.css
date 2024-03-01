@@ -1,0 +1,83 @@
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  z-index: -1;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+#hide {
+	display: none;
+}
+
+canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.controls > button , .controls > input {
+    height: 100px;
+}
+
+#beat {
+  color: white;
+}
+
+#dancer {
+    color: #fd0;
+}
+
+#beat-wrapper {
+    font-size: 72pt;
+}
+
+@keyframes flippydoo
+{
+  0% {
+    transform: rotateZ(-45deg);
+  }
+  
+  50% {
+    transform: rotateZ(45deg);
+  }
+    
+  100% {
+    transform: rotateZ(-45deg);
+  }
+}
+
+/*
+     FILE ARCHIVED ON 17:54:49 Jul 15, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:06:49 Mar 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.066
+  exclusion.robots.policy: 0.056
+  cdx.remote: 0.086
+  esindex: 0.009
+  LoadShardBlock: 108.146 (6)
+  PetaboxLoader3.datanode: 128.405 (7)
+  load_resource: 80.584
+  PetaboxLoader3.resolve: 39.264
+*/
