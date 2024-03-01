@@ -11,8 +11,9 @@
       new trailingCursor({baseImageSrc: "/images/goblin-small.png"});
       setInterval(anotherNeko, 1000);return false;
     </script>
+    <script>NekoType = "black"</script>
+    <script src="https://webneko.net/n20171213.js"></script>
     <script language='JavaScript'>
-    
     function anotherNeko(bActive) {
         
         x = Math.floor(Math.random() * box.boundWidth());
@@ -27,10 +28,11 @@
             anotherNeko(true);
         }
     }
+    
     </script>
   
   </head>
-  <body>
+  <body onload="setInterval(anotherNeko, 10000);return false;">
     <div id="container">
         <div id="headerArea">
             <div id="header" style="height: 98px;">
@@ -61,7 +63,6 @@
             </nav>
   </body>
   <img src="/images/welcome.gif" alt="an image conveying a work in progress">
-setInterval(anotherNeko, 1000);return false;
 
  <!-- THIS IS THE CSS !-->
  <style>
