@@ -35,9 +35,9 @@
   <body onload="setInterval(anotherNeko, 10000);return false;">
     <div id="container">
         <div id="headerArea">
-            <div id="header" style="height: 98px;">
+            <div id="header" style="height: 98px;font-family:'VeniceClassic'; font-size: 48px; align-content: center;">
               <center>
-                <img src="/images/goblinsite.gif" alt="burning site name">
+                <div style="padding-top: 25;">Midnight</div>
               </center>
             </div>
             <nav id="navbar" style="margin-bottom: 10px;">
@@ -76,7 +76,7 @@ the images as variables */
 
     :root {
         --header-image: url('/images/blkwarp.gif');
-        --body-bg-image: url('/images/island.jpg');
+        --body-bg-image: url('/images/spacebackground.gif');
         --aside-image: url('/images/another-bg.gif');
         --box-image: url('/images/TUFTFRAME.png');
         --scroll-image: url('/images/banner-scroll.webp');
@@ -134,8 +134,7 @@ and then link it! Many fonts have separate files for each style
         margin: 0;
         background-color: #08031A;
         /* you can delete the line below if you'd prefer to not use an image */
-        background-repeat: no-repeat;
-        background-size: cover;
+        
         color: #fceaff;
         background-image: var(--body-bg-image);
     }

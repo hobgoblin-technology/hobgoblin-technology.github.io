@@ -34,13 +34,11 @@
   		anotherNeko(true);
   	}
   }
-  //-->
   </script>
 
 </head>
 
 <body onload="midnight = new Neko(1345, 100);return false;">
-    <script ></script>
         <div id="container">
             <div id="headerArea">
                 <div id="header" style="height: 98px;">
@@ -72,7 +70,7 @@
                 <div id="counter" style="font-family:'VeniceClassic'; font-size: 24px; color: black; height: 100px;">
                 
                     <div style="display: flex;flex-direction: row;align-content: center;justify-content: center;">
-                        <div>YOU ARE USER NUMBER </div><div><script type="text/javascript" src="//counter.websiteout.com/js/3/0/0/0"></script></div> <div> TO EXPERIENCE THE BEST SITE ON THE NET</div>
+                        <div>YOU ARE USER NUMBER  </div> <div><script type="text/javascript" src="//counter.websiteout.com/js/3/0/0/0"></script>  </div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
                     </div>
                 
                 </div>
@@ -89,8 +87,6 @@
                     </center>
                     <h1>About Me</h1>
                     <p>I'm a 20-something cybersecurity student who has a passion for DFIR / SOC work! I have a black cat named midnight, who can be found on his page above!</p>
-                  
-
                 </div>
               </div>  
             <aside id="leftSidebar" style="margin-right: 10px;">
@@ -120,7 +116,7 @@
 
             :root {
                 --header-image: url('/images/blkwarp.gif');
-                --body-bg-image: url('/images/island.jpg');
+                --body-bg-image: url('/images/gwiz-background.jpg');
                 --aside-image: url('/images/another-bg.gif');
                 --box-image: url('/images/TUFTFRAME.png');
                 --scroll-image: url('/images/banner-scroll.webp');
@@ -179,8 +175,10 @@
                 background-color: #08031A;
                 /* you can delete the line below if you'd prefer to not use an image */
                 background-repeat: no-repeat;
-                background-size: cover;
-                color: #fceaff;
+                background-size:cover;
+                background-attachment:scroll;
+                background-position: center;
+                color: #ffffff;
                 background-image: var(--body-bg-image);
             }
 
@@ -331,14 +329,7 @@
               padding: 20px;
               position: absolute;
             }
-            #neko{
-              position: absolute;
-              clip: rect(0px, 32px, 32px, 0px);
-              visibility: visible;
-              left: 622px;
-              top: 497px;
-              z-index: 1000;
-            }
+            
             /* what's this "order" stuff about??
     allow me to explain!
     if you're using both sidebars, the "order" value
