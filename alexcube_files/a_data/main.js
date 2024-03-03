@@ -43,6 +43,7 @@ var light = new THREE.PointLight(0xffffff);
 scene.add(light);
 
 const imgsrc = "../../images/live-midnight-reaction.jpg";
+const skysrc = "../../images/spacebackground.gif"
   
 var loader = new THREE.TextureLoader();
 loader.load(imgsrc, function(tex) {
@@ -52,7 +53,7 @@ loader.load(imgsrc, function(tex) {
   scene.add(cube);
 });
   //skybox
-  var skyboxside = THREE.ImageUtils.loadTexture( imgsrc );
+  var skyboxside = THREE.ImageUtils.loadTexture( skysrc );
   var materialArray = [];
   for (var i = 0; i < 6; i++)
   {
