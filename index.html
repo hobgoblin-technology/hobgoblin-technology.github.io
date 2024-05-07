@@ -70,7 +70,10 @@
                 <div id="counter" style="font-family:'VeniceClassic'; font-size: 24px; color: black; height: 100px;">
                 
                     <div style="display: flex;flex-direction: row;align-content: center;justify-content: center;">
-                        <div>YOU ARE USER NUMBER  </div> <div><script type="text/javascript" async="true" src="//counter.websiteout.com/js/3/0/0/0" ></script>  </div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => alert("DOM ready after defer!"));
+                        </script>
+                        <div>YOU ARE USER NUMBER  </div> <div><script type="text/javascript" defer src="//counter.websiteout.com/js/3/0/0/0" ></script>  </div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
                     </div>
                 
                 </div>
