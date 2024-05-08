@@ -9,7 +9,7 @@
   <title>hobgoblin online</title>
   <link rel="icon" type="gif" href="/images/wizard.gif">
   <link rel="stylesheet" href="styles.css"> <!-- You can create a separate CSS file for styling -->
-  <script type="module">
+  <script defer type="module">
     import { trailingCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
     new trailingCursor({baseImageSrc: "/images/goblin-small.png"});
@@ -17,6 +17,7 @@
   
   <script>NekoType = "black"</script>
   <script src="https://webneko.net/n20171213.js"></script>
+  
   <script language='JavaScript'>
 
   
@@ -70,7 +71,7 @@
                 <div id="counter" style="font-family:'VeniceClassic'; font-size: 24px; color: black; height: 100px;">
                 
                     <div style="display: flex;flex-direction: row;align-content: center;justify-content: center;">
-                        <div>YOU ARE USER NUMBER  </div> <div onload="src='//counter.websiteout.com/js/3/0/0/0';"></div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
+                        <div>YOU ARE USER NUMBER  </div> <div id="replaceme"> 69 </div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
                     </div>
                 
                 </div>
@@ -104,7 +105,9 @@
                 <img src="/images/kobold.gif" alt="kobold ad">
               </center>
             </footer>
+            
         </div>
+        
         <!-- THIS IS THE CSS !-->
         <style>
             /* user styles */
@@ -428,8 +431,14 @@
                 }
             }
         </style>
-
-    
+<div id="bingus">
+    <script src="//counter.websiteout.com/js/3/0/0/0"></script>
+</div>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById("replaceme").replaceWith(document.getElementById("bingus"));
+    };
+</script>
 </body>
 
 </html>
