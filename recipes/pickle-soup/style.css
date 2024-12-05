@@ -126,7 +126,9 @@ html, body {
                 opacity: 100%;
             }
             #content {
+              white-space: wrap;
               padding-left: 80px;
+              padding-right: 10px;
               font-family: VeniceClassic;
-              font-size: 20px;
+              font-size: 22px;
             }

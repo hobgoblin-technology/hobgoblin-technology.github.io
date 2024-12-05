@@ -43,7 +43,7 @@ var light = new THREE.PointLight(0xffffff);
 scene.add(light);
 
 const imgsrc = "../../images/live-midnight-reaction.jpg";
-const skysrc = "../../images/containment.jpg";
+const skysrc = "../../images/transparent-test.png";
   
 var loader = new THREE.TextureLoader();
 loader.load(imgsrc, function(tex) {
