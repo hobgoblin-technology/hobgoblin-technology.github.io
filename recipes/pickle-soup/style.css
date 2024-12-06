@@ -134,3 +134,7 @@ html, body {
               font-family: MedievalSharp;
               font-size: 22px;
             }
+
+            #content li {
+                padding-bottom: 10px;
+            }
