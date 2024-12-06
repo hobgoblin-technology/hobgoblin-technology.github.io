@@ -5,12 +5,13 @@
                 font-family: VeniceClassic;
                 src: url(https://sadhost.neocities.org/fonts/VeniceClassic.woff);
             }
-            /*
+
             @font-face {
-                font-family: VeniceClassic;
-                src: url('https://goblintech.neocities.org/fonts/VeniceClassic.ttf');
+                font-family: MedievalSharp;
+                src: url('/fonts/MedievalSharp/MedievalSharp-Regular.ttf');
             }
-            */
+
+
             @font-face {
                 font-family: Nunito;
                 src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
@@ -47,7 +48,7 @@ html, body {
 }
 
       #container {
-                background: url('/images/recipes/paper1.png');
+                background: url('/images/recipes/paper2.png');
                 background-size: cover;
                 background-repeat: no-repeat;
 
@@ -126,9 +127,10 @@ html, body {
                 opacity: 100%;
             }
             #content {
+              width: 800px;
               white-space: wrap;
-              padding-left: 80px;
+              padding-left: 40px;
               padding-right: 10px;
-              font-family: VeniceClassic;
+              font-family: MedievalSharp;
               font-size: 22px;
             }
