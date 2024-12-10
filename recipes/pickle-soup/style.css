@@ -38,7 +38,7 @@
 html, body {
   font-family: 'Nunito', sans-serif;
   background-image:url('/images/recipes/recipebg.jpg');
-  background-repeat: no-repeat repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -50,7 +50,7 @@ html, body {
       #container {
                 background: url('/images/recipes/paper2.png');
                 background-size: cover;
-                background-repeat: no-repeat;
+                background-repeat: no-repeat repeat;
 
                 max-width: 900px;
                 /* this is the width of your layout! */
