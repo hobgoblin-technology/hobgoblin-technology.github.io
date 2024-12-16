@@ -8,25 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hobgoblin online</title>
   <link rel="icon" type="gif" href="/images/wizard.gif">
-  <link rel="stylesheet" href="style.css">
   <script defer type="module">
     import { trailingCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
     new trailingCursor({baseImageSrc: "/images/goblin-small.png"});
   </script>
-  
+
   <script>NekoType = "black"</script>
   <script src="https://webneko.net/n20171213.js"></script>
-  
+
   <script language='JavaScript'>
 
-  
+
   function anotherNeko(bActive) {
-  	
+
   	x = Math.floor(Math.random() * box.boundWidth());
   	y = Math.floor(Math.random() * box.boundHeight());
   	scat = new Neko(x,y, bActive);
-  	
+
   }
   function catHerding()
   {
@@ -65,58 +64,24 @@
                         </div>
                     </ul>
                 </nav>
-                <div id="counter" style="font-family:'VeniceClassic'; font-size: 24px; color: black; height: 100px;">
-                
-                    <div style="display: flex;flex-direction: row;align-content: center;justify-content: center;">
-                        <div>YOU ARE USER NUMBER  </div> <div id="replaceme"> 69 </div> <div>  TO EXPERIENCE THE BEST SITE ON THE NET</div>
-                    </div>
-                
-                </div>
             </div>
+            <center>
 
-            <div id="flex">
-                <div id = "main">
-                <div class="background">
-                    
-                </div>
-                <div class="content">
+                <div id="main">
+                    <div class="background"> </div>
                     <center>
-                      <img src="/images/Ebbie.howdy.gif" alt="fish saying howdy" width=400>
+                        <div class="content">
+                            <iframe id="guesty" src="https://users3.smartgb.com/g/g.php?a=s&i=g36-37605-8c" style="width:100%;height:100%;">
+                            </iframe>
+                        </div>
                     </center>
-                    <h1>About Me</h1>
-                    <p>I'm a 20-something cybersecurity analyst and tinkerer. I have a black cat named midnight, who can be found on his page here: <a href="/midnightcube.html" target="_blank"><img src="/images/midnightcube-button.png"></a></p></p>
                 </div>
-              </div>  
-            <aside id="leftSidebar" style="margin-right: 10px;">
-            <img src="/images/output-onlinegiftools-edit.gif" alt="goblin on computer" width=180>
-            <div id="buttons" >
-              <center>
-                <a href="/guestbook"><img alt="Guestbook" border="0" src="/images/guestbook.gif"></a>
 
-                <a href="/midnightcube.html" target="_blank"><img src="/images/midnightcube-button.png"></a>
-                <a href="https://sadgrl.online/" target="_blank"><img src="https://sadgrl.online/assets/images/buttons/sadgrlonline.gif"></a>
-              </center>
-            </div>
-            
-            </aside></div>
-            <footer id="footer" style="margin-top: 10px;">
-              <center>
-                <img src="/images/kobold.gif" alt="kobold ad">
-              </center>
-            </footer>
-            
+            </center>
         </div>
-        
-        <!-- THIS IS THE CSS !-->
-        <style>
-            /* user styles */
 
-            /* styles are what change the color and sizes of stuff on your site. */
 
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept
-    the images as variables */
-
+            <style>
             :root {
                 --header-image: url('/images/blkwarp.gif');
                 --body-bg-image: url('/images/gwiz-background.jpg');
@@ -184,23 +149,18 @@
                 color: #ffffff;
                 background-image: var(--body-bg-image);
             }
-
-            * {
-                box-sizing: border-box;
+                #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                height: 150px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header,
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
             }
-
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
+#container {
                 max-width: 900px;
                 /* this is the width of your layout! */
                 /* if you change the above value, scroll to the bottom
@@ -218,19 +178,6 @@
       you can add a line below here that says:
       text-decoration:none; */
             }
-
-            #header {
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header,
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
-
             /* navigation section!! */
             #navbar {
                 height: 40px;
@@ -275,41 +222,39 @@
             #navbar .unfinished:hover {
                 opacity: 100%;
             }
-            #flex {
-                display: flex;
-            }
-            #counter {
-              padding-top: 45px;
-              padding-bottom: 50px;
-              background-image: var(--scroll-image);
-              background-position:center;
-              background-repeat: no-repeat;
-              background-size:contain;
-            }
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                /*background-color: #241445;*/
-                background-image: var(--aside-image);
-                background-size: 100%;
-                width: 200px;
+            #content {
+                opacity: 1;
                 padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
+                order: 2;
+                flex: 1;
             }
-
-
-            /* this is the color of the main content area,
-    between the sidebars! */
+            #background{
+                padding: 20px;
+                border-style: groove;
+                border-width: 20px;
+                border-color:#ED64F5;
+                background-image: url('/images/earthbound-background.gif');
+                background-position:center;
+                background-size:cover;
+                opacity: .5;
+                order: 2;
+                flex: 1;
+            }
+            #guestbook{
+                min-height: 610px;
+                background-color:transparent;
+                opacity: 1;
+                border-width 0;
+            }
             #main{
               position: relative;
               order: 2;
               flex: 1;
-              padding: 20px;
+              padding: 0px;
               border-style: groove;
               border-width: 20px;
               border-color:#ED64F5;
+              min-height: 800px;
             }
             .background {
                 background-image: url('/images/earthbound-background.gif');
@@ -325,119 +270,15 @@
                 left: 0;
             }
             .content{
-
               opacity: 1;
               order: 2;
               flex: 1;
-              padding: 20px;
+              padding: 0px;
               position: absolute;
+              width:100%;
+              height:100%;
             }
-
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
-                order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
-            }
-
-            footer {
-                background-color: #13092D;
-                /* background color for footer */
-                width: 100%;
-                height: 80px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
-            }
-
-            h1,
-            h2,
-            h3 {
-                color: #ED64F5;
-            }
-
-            h1 {
-                font-size: 25px;
-            }
-
-            strong {
-                /* this styles bold text */
-                color: #ED64F5;
-            }
-
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border-image: url('/images/TUFTFRAME.png') 30;
-                border: 1px solid #ED64F5;
-                padding: 10px;
-            }
-
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
-            }
-
-
-            /* BELOW THIS POINT IS MEDIA QUERY */
-
-            /* so you wanna change the width of your page?
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the
-    "max-width" value below
-    */
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                #main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
-        </style>
-<div id="bingus">
-    <script src="//counter.websiteout.com/js/3/0/0/0"></script>
-</div>
-<script type="text/javascript">
-    window.onload = function() {
-        document.getElementById("replaceme").replaceWith(document.getElementById("bingus"));
-    };
-</script>
+            </style>
 </body>
 
 </html>
